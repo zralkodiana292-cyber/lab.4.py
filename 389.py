@@ -1,0 +1,9 @@
+s = input().strip()
+n = len(s)
+parts = []
+
+for i in range(n, 0, -3):
+    start = max(0, i - 3)
+    parts.insert(0, s[start:i])
+
+print(",".join(parts))
